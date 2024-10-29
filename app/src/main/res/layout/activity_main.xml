@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp">
+
+
+<EditText
+    android:id="@+id/editTextSearch"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Nhập tên hoặc MSSV"
+    android:inputType="text"
+    android:padding="12dp"
+    android:background="@android:drawable/edit_text"
+    android:drawablePadding="8dp"
+    />
+
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recyclerViewStudents"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:paddingTop="16dp"/>
+
+
+<TextView
+    android:id="@+id/textViewNoResults"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:text="Không tìm thấy kết quả nào"
+    android:textColor="@android:color/holo_red_dark"
+    android:visibility="gone"
+    android:gravity="center"/>
+
+</LinearLayout>
